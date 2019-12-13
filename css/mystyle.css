@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+/*-----Color Palette ---------------
+Deep Taupe = #71575D
+English Lavender = #B18287
+Vivid Tangerine = #FFAE91
+Tumbleweed = #D9A98F
+Peach = #FEC69F
+
+-----End of Color Palette----------*/
+
+
+/*------ Global Styles ------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+a {
+    color: #fff0bc;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h1, h2 {
+    font-family: Cambria, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.LI-profile-badge {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+/*-----This Div defines the background styling for my profile section---------*/
+.content-wrap {
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.item-details h3 + p {
+    font-style: italic;
+}
+
+.item-details h3 ~ p {
+    margin: 0;
+}
+
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+.divider section:last-of-type {
+    border-bottom: none;
+}
+
+/* Profile
+**************************************/
+header {
+    background-color: #a5694b;  /*Deep Taupe*/
+    color: #e6e8ea ;   /*#fff0bc*/
+}
+
+/*Work Experience
+*************************************/
+.work {
+    background-color: #a5694b;
+    color: #e6e8ea;
+}
+
+
+/*Academic Achievements
+*************************************/
+.education {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.08)), url("../images/annie-spratt-unsplash.jpg");
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+    color: #e6e8ea;
+}
+
+.education p {
+    width: 60%;
+}
+
+.certifications {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.08)), url("../images/joanna-kosinska-unsplash.jpg");
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+    color: #e6e8ea;
+}
+
+
+/*Projects
+***********************************/
+.projects {
+    background-color: #e7dcc8;   /*#D9A98F*/
+}
+.projects a {
+    color: #2F3061;
+}
+
+.projects .btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects .btn:hover {
+    background: rgba(47, 48, 97, 0.8);
+}
+
+.project-item {
+    overflow: hidden;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+
+/*Let's Keep in touch!
+***********************************/
+footer {
+    background: #1b0d13;
+    color: #e6e8ea;  /*#582719*/
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+/***************   Media   **************************/
+
+@media screen and (min-width: 750px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .content-wrap p {
+        display: block;
+        text-align: left;
+    }
+
+    .content-wrap li {
+        text-align: left;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+
+    .job-item {          /*This is the grid container*/
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .LI-profile-badge {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
