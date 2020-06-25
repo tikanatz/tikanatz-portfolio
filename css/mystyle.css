@@ -11,16 +11,10 @@ Peach = #FEC69F
 -----End of Color Palette----------*/
 
 :root {
-    --tumbleweed: #D9A98F;
-    --peach: #FEC69F;
     --off-white: #fff0bc;
     --not-sure: rgb(226, 178, 153);
     --white: #ffffff;
     --black: #000000;
-
-    --goldenrod: hsla(44, 100%, 83%, 1);
-    --seal-brown: hsla(30, 90%, 31%, 1);
-    --orange-yellow: hsla(45, 98%, 94%, 1);
     --blue-jeans: hsla(199, 94%, 95%, 1);
 }
 
@@ -126,9 +120,6 @@ h3 {
 **************************************/
 header {
     background-color: var(--blue-jeans);
-    /*background-color: var(--deep-taupe);  !*Deep Taupe*!*/
-    /*color:  #e6e8ea ;   !*#fff0bc*!*/
-    /*color: #442404;*/
 }
 
 /*Projects
@@ -187,32 +178,19 @@ header {
 
 /*Academic Achievements
 *************************************/
-.education {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.5) 100%), url("../images/sharon-mccutcheon-unsplash.jpg");
-        background-size: cover;
-    background-position: top right;
-    padding-bottom: 10px;
-    color: var(--white);
-}
-
-.education p {
+.academics p {
     width: 75%;
 }
 
-.education .section {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-}
-
-.certifications {
+.academics {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("../images/joanna-kosinska-unsplash.jpg");
     background-size: cover;
     background-position: top right;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     color: var(--white);
 }
 
-.certifications p span {
+.academics p span {
     font-weight: bold;
     font-style: italic;
 }
@@ -236,7 +214,7 @@ footer {
 
 /***************   Media   **************************/
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 680px) {
     header, footer {
         text-align: center;
     }
@@ -274,11 +252,11 @@ footer {
         margin: 0;
         align-items: center;
         justify-content: center;
+        background: #1b0d13;
     }
-
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 679px) {
     h1 {
         font-size: 50px;
         line-height: 0.9;
@@ -294,16 +272,13 @@ footer {
         width: 100%;
         text-align: center;
     }
-    .work {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 1) 100%), url("../images/create_1920.jpg");
-        background-size: cover;
-        background-position: top center;
-        padding-bottom: 10px;
-        color: var(--white);
-    }
 
     img {
         width: auto;
         height: 100px;
+    }
+
+    .LI-profile-badge {
+        display: none;
     }
 }
