@@ -7,8 +7,22 @@ Vivid Tangerine = #FFAE91
 Tumbleweed = #D9A98F
 Peach = #FEC69F
 
+
 -----End of Color Palette----------*/
 
+:root {
+    --tumbleweed: #D9A98F;
+    --peach: #FEC69F;
+    --off-white: #fff0bc;
+    --not-sure: rgb(226, 178, 153);
+    --white: #ffffff;
+    --black: #000000;
+
+    --goldenrod: hsla(44, 100%, 83%, 1);
+    --seal-brown: hsla(30, 90%, 31%, 1);
+    --orange-yellow: hsla(45, 98%, 94%, 1);
+    --blue-jeans: hsla(199, 94%, 95%, 1);
+}
 
 /*------ Global Styles ------------*/
 html {
@@ -18,22 +32,41 @@ html {
     box-sizing: inherit;
 }
 
+/* Responsive Images Reset */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Body Reset */
 body {
-    color: black;
     margin: 0;
+}
+
+/* Typography Resets */
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+
+body {
+    scroll-behavior: smooth;
+    color: var(--black);
+    margin: auto;
     padding: 0;
     font-family: 'Calibri', sans-serif;
     font-size: 17px;
     line-height: 1.5;
+    /*background-color: var(--gradient-top);*/
 }
 
 img {
-    width: 300px;
+    width: 200px;
     height: auto;
 }
 
 a {
-    color: #fff0bc;
+    color: var(--off-white);
 }
 a:hover {
     text-decoration: none;
@@ -65,7 +98,7 @@ h1, h2 {
     max-width: 900px;
     width: 85%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 h3 {
@@ -81,80 +114,45 @@ h3 {
 }
 
 .divider > section {
-    border-bottom: 2px dashed rgb(255, 230, 215);
+    border-bottom: 2px dashed var(--not-sure);
     padding: 25px 0;
 }
 
 .divider section:last-of-type {
     border-bottom: none;
-    padding: 25px 0;
 }
 
 /* Profile
 **************************************/
 header {
-    background-color: rgb(68,36,4);  /*Deep Taupe*/
-    color: #e6e8ea ;   /*#fff0bc*/
+    background-color: var(--blue-jeans);
+    /*background-color: var(--deep-taupe);  !*Deep Taupe*!*/
+    /*color:  #e6e8ea ;   !*#fff0bc*!*/
+    /*color: #442404;*/
 }
-
-/*Work Experience
-*************************************/
-.work {
-    background: rgb(246,189,11);
-    background: linear-gradient(245deg, rgba(207,162,139,1) 0%, rgba(178,136,111,1) 25%, rgba(161,121,95,1) 50%, rgba(144,106,79,1) 75%, rgba(68,36,4,1) 100%);
-    /*background: rgb(68,36,4);*/
-    /*background: linear-gradient(180deg, rgba(68,36,4,1) 25%, rgba(207,162,139,1) 100%);*/
-    color: rgb(255, 230, 215);
-}
-
-
-/*Academic Achievements
-*************************************/
-.education {
-//  background-image: linear-gradient(to bottom,rgba(0,0,0,0.03), rgba(0,0,0,0.8)), url("../images/annie-spratt-unsplash.jpg");
-    background: rgb(246,189,11);
-    background: linear-gradient(180deg, rgba(246,189,11,1) 25%, rgba(224,170,9,1) 50%, rgba(201,151,7,1) 75%, rgba(168,123,4,1) 100%);  // #D9A98F
-    background-size: cover;
-    background-position: top right;
-    padding-bottom: 100px;
-    color: #442404;
-}
-
-.education p {
-    width: 60%;
-}
-
-.certifications {
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0.08)), url("../images/joanna-kosinska-unsplash.jpg");
- //   background-color: #e7dcc8;   /*#D9A98F*/
-    background-size: cover;
-    background-position: top right;
-    padding-bottom: 100px;
-    color: rgb(255, 240, 230);
-}
-
 
 /*Projects
 ***********************************/
 .projects {
-    /*background: rgb(203,203,202);*/
-    /*background: linear-gradient(115deg, rgba(203,203,202,1) 0%, rgba(173,166,158,1) 50%, rgba(138,123,107,1) 100%);*/
-    background: rgb(139,105,0);
-    background: linear-gradient(115deg, rgba(139,105,0,1) 0%, rgba(222,160,15,1) 49%, rgba(139,105,0,1) 100%);
-    /*background: rgb(206,195,175);*/
-    /*background: linear-gradient(0deg, rgba(206,195,175,1) 0%, rgba(173,147,123,1) 45%, rgba(178,155,131,1) 55%, rgba(206,195,175,1) 100%);*/
-}
-.projects a {
-    color: #2F3061;
+    background: rgb(172, 172, 168);
+    background: linear-gradient(115deg, rgba(172, 172, 168,1) 0%, rgba(143, 136, 130, 0.8) 50%, rgba(138,123,107,1) 100%);
 }
 
-.projects .btn {
-    color: #F7FFF7;
-    background: #2F3061;
+.projects .container .btn {
+    color: var(--white);
+    background: var(--black);
     text-decoration: none;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 5px;
     display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.projects .container{
+    width: 100%;
+    text-align: end;
 }
 
 .projects .btn:hover {
@@ -167,6 +165,71 @@ header {
 
 .project-item h3 {
     margin-top: 0;
+}
+
+.project-item ~p {
+    margin-left: 5px;
+}
+
+.project-item img {
+    width: auto;
+    height: 70px;
+}
+
+.divider .project-item ul li{
+    margin-left: 20px;
+}
+
+/*Work Experience
+*************************************/
+.work {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("../images/work.jpg");
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 10px;
+    /*background: rgb(246,189,11);*/
+    /*background: linear-gradient(245deg, rgba(207,162,139,1) 0%, rgba(178,136,111,1) 25%, rgba(161,121,95,1) 50%, rgba(144,106,79,1) 75%, rgba(68,36,4,1) 100%);*/
+    /*background: rgb(68,36,4);*/
+    /*background: linear-gradient(180deg, rgba(68,36,4,0.5) 15%, rgba(207,162,139,1) 100%);*/
+    color: var(--white);
+    /*color: #442404;*/
+}
+
+
+/*Academic Achievements
+*************************************/
+.education {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.5) 100%), url("../images/sharon-mccutcheon-unsplash.jpg");
+    /*background: rgb(246,189,11);*/
+    /*background: linear-gradient(180deg, rgba(246,189,11,0.5) 5%, rgba(224,170,9,1) 100%);*/
+/*rgba(201,151,7,1) 75%, rgba(168,123,4,1) 100%);  !* #D9A98F*!*/
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 10px;
+    color: var(--white);
+    /*color: #442404;*/
+}
+
+.education p {
+    width: 75%;
+}
+
+.education p span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.education .section {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.certifications {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("../images/joanna-kosinska-unsplash.jpg");
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+    color: var(--white);
 }
 
 
@@ -232,7 +295,7 @@ footer {
 
 @media screen and (max-width: 749px) {
     h1 {
-        font-size: 75px;
+        font-size: 50px;
         line-height: 0.9;
         margin-bottom: 20px;
     }
@@ -241,5 +304,9 @@ footer {
     }
     .contact-list a {
         padding: 5px;
+    }
+    .projects .container{
+        width: 100%;
+        text-align: center;
     }
 }
