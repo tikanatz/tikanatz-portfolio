@@ -67,12 +67,12 @@ a:hover {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 h1, h2 {
@@ -120,6 +120,21 @@ h3 {
 **************************************/
 header {
     background-color: var(--blue-jeans);
+}
+
+.content-wrap img {
+    display: inline-flex;
+    border-radius: 50%;
+    max-width: 75%;
+}
+
+.content-wrap .heading{
+    width: 100%;
+    text-align: start;
+}
+.content-wrap .about{
+    text-align: end;
+    width: 100%
 }
 
 /*Projects
@@ -241,7 +256,7 @@ footer {
         column-gap: 20px;
     }
 
-    .contact-list {
+    .contact-list, .head{
         display: flex;
         justify-content: center;
     }
@@ -258,13 +273,23 @@ footer {
 
 @media screen and (max-width: 679px) {
     h1 {
-        font-size: 50px;
+        font-size: 30px;
         line-height: 0.9;
         margin-bottom: 20px;
     }
     h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
         line-height: 1;
     }
+
+    .content-wrap .heading{
+        text-align: center;
+    }
+    .content-wrap .about{
+        text-align: start;
+    }
+
     .contact-list a {
         padding: 5px;
     }
