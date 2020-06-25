@@ -1,15 +1,6 @@
 @charset "UTF-8";
 
-/*-----Color Palette ---------------
-Deep Taupe = #71575D
-English Lavender = #B18287
-Vivid Tangerine = #FFAE91
-Tumbleweed = #D9A98F
-Peach = #FEC69F
-
-
------End of Color Palette----------*/
-
+/*-----Color Palette ---------------*/
 :root {
     --off-white: #fff0bc;
     --not-sure: rgb(226, 178, 153);
@@ -17,6 +8,7 @@ Peach = #FEC69F
     --black: #000000;
     --blue-jeans: hsla(199, 94%, 95%, 1);
 }
+/*-----End of Color Palette----------*/
 
 /*------ Global Styles ------------*/
 html {
@@ -51,7 +43,6 @@ body {
     font-family: 'Calibri', sans-serif;
     font-size: 17px;
     line-height: 1.5;
-    /*background-color: var(--gradient-top);*/
 }
 
 img {
@@ -76,7 +67,7 @@ h2 {
 }
 
 h1, h2 {
-    font-family: Cambria, sans-serif;
+    font-family: "Palatino", "Georgia", "Verdana", "Garamond", "Cambria", sans-serif;
     font-weight: 400;
     margin: 0;
 }
