@@ -279,12 +279,6 @@ footer {
         text-align: left;
     }
 
-    .project-item iframe {
-        float: left;
-        margin-right: 25px;
-        padding-right: 25px;
-    }
-
     .project-item img {
         float: left;
         margin-right: 25px;
@@ -337,6 +331,11 @@ footer {
     }
     .projects .container{
         width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li{
+        margin: -4vh 0 3vh;
         text-align: center;
     }
 
