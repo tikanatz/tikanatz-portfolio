@@ -7,6 +7,7 @@
     --white: #ffffff;
     --black: #000000;
     --blue-jeans: hsla(199, 94%, 95%, 1);
+    --trying-this: #112867;
 }
 /*-----End of Color Palette----------*/
 
@@ -34,7 +35,6 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
 }
 
-
 body {
     scroll-behavior: smooth;
     color: var(--black);
@@ -53,6 +53,7 @@ img {
 a {
     color: var(--off-white);
 }
+
 a:hover {
     text-decoration: none;
 }
@@ -113,6 +114,38 @@ header {
     background-color: var(--blue-jeans);
 }
 
+header nav li {
+    flex: 1;
+}
+
+header nav ul {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: -7vh 20vw 2vh;
+    text-align: right;
+}
+
+header nav ul li a {
+    background-color: var(--trying-this);
+    color: var(--white);
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+header nav a:hover, a:active, a:focus{
+    background-color: var(--black);
+    color: var(--white);
+}
+
 .content-wrap .heading img {
     display: inline-flex;
     border-radius: 50%;
@@ -123,11 +156,10 @@ header {
     text-align: start;
     width: 80%;
 }
+
 .content-wrap .about{
     text-align: end;
 }
-
-
 
 /*Projects
 ***********************************/
@@ -167,6 +199,14 @@ header {
 
 .project-item ~p {
     margin-left: 5px;
+}
+
+.project-item li {
+    margin-left: 15px;
+}
+
+.project-item li span {
+    font-weight: bold;
 }
 
 .divider .project-item ul li{
@@ -239,6 +279,12 @@ footer {
         text-align: left;
     }
 
+    .project-item iframe {
+        float: left;
+        margin-right: 25px;
+        padding-right: 25px;
+    }
+
     .project-item img {
         float: left;
         margin-right: 25px;
@@ -278,7 +324,8 @@ footer {
         line-height: 1;
     }
 
-    .content-wrap .heading{
+    .content-wrap .heading {
+        margin: auto;
         text-align: center;
     }
     .content-wrap .about{

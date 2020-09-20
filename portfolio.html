@@ -2,23 +2,191 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNBR Projects</title>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="https://kit.fontawesome.com/960e6df1f4.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/mystyle.css">
 </head>
 <body>
 <main>
+    <header>
 
+        <div class="content-wrap head">
+            <div class="heading">
+                <a href="index.html">
+                    <img src="images/TikaNatz-400px.jpg" style= "height: 250px; width: auto;" alt="TikaNatz Pic"/>
+                </a>
+            </div>
+            <div class="about">
+                <h1>Tamika Burgess-Rose</h1>
+                <h2>Information Technology Professional</h2>
+                <p>Digital Forensics Analyst in training at British Columbia Institute of Technology (BCIT)</p>
+                <p>Trained Software Systems Developer with hands on experience with current technologies and programming languages</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+    <section class="projects">
+        <div class="content-wrap divider">
+            <h2>Featured Projects</h2>
+
+            <!-- BCIT Final Industry Project -->
+            <section class="project-item">
+                <h3>Team Lead – LYP-World</h3>
+                <p>BCIT – Industry Client Project (Apr 2020 - May 2020)</p>
+                <img src="images/LargestLYP.png" alt="LYP Logo" />
+                <p>
+                    Developed the prototype social media platform for Love Your Planet, a dedicated environment for individuals and groups who share a common interest in preserving our planet, to connect, conceptualize and plan their unique contributions in achieving a common goal.
+                </p>
+                <ul>
+                    <li>Using MERN Stack JS, implemented Node.js with Express & MongoDB back-end and React frontend to create a functional and easy to use social media platform.</li>
+                    <li>Developed the Individual and Group Pages and Newsfeeds, which allows the users to make posts and comments to each other’s pages.</li>
+                </ul>
+                <div class="container">
+                    <a href="https://lyp-world.herokuapp.com" target="_blank" class="btn">View project</a>
+                </div>
+            </section>
+
+            <!-- Personal API Project -->
+            <section class="project-item">
+                <h3>Simple Portfolio API</h3>
+                <p>Personal Project (May 2020)</p>
+                <img src="images/work_1920.jpg" alt="Developer"/>
+                <p>
+                    Developed a secure CRUD Node.js, Express and Mongo API, documented using Swagger-JSDocs.
+                </p>
+                <ul>
+                    <li>
+                        Demonstrates how to use Swagger-JSDocs to autogenerate Open API Specification (OAS Version 3.0.3) documentation.
+                    </li>
+                    <li>
+                        Ability to use Swagger-UI-Express to test multiple endpoints
+                    </li>
+                </ul>
+                <div class="container">
+                    <a href="https://github.com/tikanatz/crud_portfolio_api" target="_blank" class="btn">View project</a>
+                </div>
+            </section>
+
+            <!-- BCIT Personal Project for Front-End Web Development -->
+            <section class="project-item">
+                <h3>My Island Home</h3>
+                <p>BCIT – Internal Project (Oct 2019)</p>
+                <img src="images/jamaica-flag-heart-3d-large.png" alt="Jamaica Flag in the shape of a heart"/>
+                <p>Developed a 3-page website using HTML/CSS and JavaScript after completing Systems Foundations Module.</p>
+                <ul>
+                    <li>Demonstrate understanding of Website developments.</li>
+                    <li><span>Technologies Used:</span> HTML5, CSS3 and JavaScript</li>
+                </ul>
+                <div class="container">
+                    <a href="https://my-island-home.netlify.app/" target="_blank" class="btn">View project</a>
+                </div>
+            </section>
+
+            <!--            <section class="project-item">-->
+            <!--              <h3>Payslip Validator</h3>-->
+            <!--<img src="project-thumbnail.png" alt="description of image"></!-->
+            <!--        <img src="images/TikaNatz-600px.jpg" height="902" width="600" alt="TikaNatz Pic"/>-->
+            <!--              <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>-->
+            <!--            <div class="container">-->
+            <!--              <a href="#" target="_blank" class="btn">View project</a>-->
+            <!--            </div>-->
+            <!--            </section>-->
+
+            <!--            <section class="project-item">-->
+            <!--              <h3>Debit Calculator</h3>-->
+            <!--              &lt;!&ndash;<img src="project-thumbnail.png" alt="description of image"></!&ndash;&gt;-->
+            <!--              &lt;!&ndash;        <img src="images/TikaNatz-600px.jpg" height="902" width="600" alt="TikaNatz Pic"/>&ndash;&gt;-->
+            <!--              <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>-->
+            <!--            <div class="container">-->
+            <!--              <a href="#" target="_blank" class="btn">View project</a>-->
+            <!--            </div>-->
+            <!--            </section>-->
+
+            <!--            <section class="project-item">-->
+            <!--              <h3>Do you remember?</h3>-->
+            <!--              &lt;!&ndash;<img src="project-thumbnail.png" alt="description of image"></!&ndash;&gt;-->
+            <!--              &lt;!&ndash;        <img src="images/TikaNatz-600px.jpg" height="902" width="600" alt="TikaNatz Pic"/>&ndash;&gt;-->
+            <!--              <p>Class assignment to develop an app using Javascript/jQUery only.</p>-->
+            <!--            <div class="container">-->
+            <!--              <a href="#" target="_blank" class="btn">View project</a>-->
+            <!--            </div>-->
+            <!--            </section>-->
+
+            <!--Test Manager - Final Major Project-->
+            <section class="project-item">
+              <h3>CIBC FirstCaribbean's Corporate Online Banking</h3>
+                <p>CIBC FCIB – Internal Project (2019)</p>
+                <a href="https://www.cibcfcib.com/">
+                    <img src="images/cibcfcib_logo.png" alt="CIBC FirstCaribbean Int'l Bank Logo">
+                </a>
+              <p>As CIBC FirstCaribbean's Oversight Test Manager, I worked closely with the project managers from CIBC (Canada) and Jonah's Group (Canada) as well as the development teams (Barbados & India).</p>
+                <ul>
+                    <li>Managed the successful end user testing and implementation of Epics 1 – 4 to the production environment</li>
+                    <li>Responsible for 3 remote Test Engineers from NTT Data(Canada)</li>
+                    <li>Technologies used:
+                        <ul>
+                            <li><span>Test Automation</span>: Robot Framework with Selenium, Jenkins</li>
+                            <li><span>Project Management</span>: JIRA</li>
+                        </ul>
+                    </li>
+                </ul>
+            <div class="container">
+              <a href="https://corporatebanking.cibcfcib.com/login" target="_blank" class="btn">View project</a>
+            </div>
+            </section>
+
+            <section class="project-item">
+                <h3>Jamaica Credit Bureau Project – Phase 2</h3>
+                <p>CIBC FCIB – Internal Project (2017 - 2018)</p>
+                <a href="https://www.cibcfcib.com/">
+                    <img src="images/cibcfcib_logo.png" alt="CIBC FirstCaribbean Int'l Bank Logo">
+                </a>
+                <p>The 3 main objectives for Phase 2 of the project was to:</p>
+                    <ul>
+                        <li><span>Determine</span> root cause of <span>rejection of 72% of data</span> transferred to CreditInfo</li>
+                        <li>Develop Extraction, Load and Transmission process(ETL) for the <span>Credit Card data to CreditInfo</span>, one of two approved bureaus in Jamaica at the time</li>
+                        <li>Develop Extraction, Load and Transmission process(ETL) for the <span>Bank Accounts and Credit Card data to CRIF Information Bureau</span>, the second approved bureau in Jamaica at the time</li>
+                    </ul>
+                <p>As Test Lead for the initiative, I was: </p>
+                <ul>
+                    <li>Responsible for the <span>99% reduction of errors in data transmission</span> reported by both credit bureaus, which increased customer confidence in data integrity.</li>
+                    <li>At the recommendation of the Project Manager, Joy Fearon, the <span>recipient of the HR Star Achievers’ Spot Award for exemplary contribution</span> to the Jamaica Credit Bureau project</li>
+                    <li><span>Technologies used</span>: ETL Processing, SFTP, Data Validation</li>
+                </ul>
+                <div class="container">
+                    <a href="http://www.jamaicaobserver.com/business/cibc-first-caribbean-collaorates-with-credit-bureaus_19237364" class="btn">View project</a>
+                </div>
+            </section>
+            <!-- End of Project block. -->
+        </div>
+
+    </section>
 </main>
 <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
 <footer>
     <div class="content-wrap">
         <h2>Let's Keep in Touch!</h2>
         <ul class="contact-list">
-            <li><a href="mailto:Tamika.Burgess-Rose@Outlook.com">Tamika.Burgess-Rose@Outlook.com</a></li>
-            <li><a href="http://yourwebsite.com" target="_blank">tamika.burgessrose.tech</a></li>
-            <li><a href="https://www.linkedin.com/in/tamikanbrose/" target="_blank">LinkedIn</a></li>
+            <li>
+                <a href="mailto:Tamika.Burgess-Rose@Outlook.com">Tamika.Burgess-Rose@Outlook.com</a>
+                <i class="fas fa-envelope fa-spin fa-lg"></i>
+            </li>
+            <li>
+                <a href="https://github.com/tikanatz" target="_blank">GitHub</a>
+                <i class="fab fa-github fa-spin fa-lg"></i>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/tamikanbrose/" target="_blank">LinkedIn</a>
+                <i class="fab fa-linkedin fa-spin fa-lg"></i>
+            </li>
         </ul>
         <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal"
              data-theme="dark" data-vanity="tamikanbrose"><a class="LI-simple-link"
