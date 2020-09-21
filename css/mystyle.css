@@ -126,7 +126,7 @@ header nav ul {
 }
 
 header nav ul li{
-    margin: -7vh 20vw 2vh;
+    margin: -7vh 15vw 2vh;
     text-align: right;
 }
 
@@ -283,6 +283,16 @@ footer {
         float: left;
         margin-right: 25px;
         padding-right: 25px;
+    }
+
+    .projects .container{
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li{
+        margin: -5vh 18vh 4vh;
+        text-align: right;
     }
 
     .job-item {          /*This is the grid container*/
